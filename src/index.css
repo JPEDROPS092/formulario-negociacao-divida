@@ -23,3 +23,9 @@ code {
   left: 0;
   z-index: 999; /* Garante que o chatbot fique acima de outros elementos */
 }
+
+/* styles.css */
+body {
+  background-color: #f0f8ff; /* Azul claro para o fundo */
+  color: #007bff; /* Azul escuro para o texto */
+}

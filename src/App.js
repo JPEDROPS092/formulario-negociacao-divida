@@ -1,4 +1,5 @@
 import React, { useEffect,useState } from 'react';
+import miamiImage from './images/mimi.png'; // Ajustar o caminho se necessário
 
 const FormularioNegociacaoDivida = () => {
   useEffect(() => {
@@ -58,7 +59,10 @@ const FormularioNegociacaoDivida = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <img src="miami.png" alt="miami" className="mb-4" />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '40vh'   
+ }}>
+      <img src={miamiImage} alt="Miami" className="mb-4" />
+    </div>
       <h1 className="text-3xl font-bold mb-4">Formulário de Negociação de Dívida</h1>
       <form onSubmit={handleSubmit}>
         <h2 className="text-2xl font-bold mb-2">Informações de Identificação</h2>
@@ -179,7 +183,7 @@ const FormularioNegociacaoDivida = () => {
             value={nomeCredor}
             onChange={(event) => setNomeCredor(event.target.value)}
             required
-          /> script.src = 'https://cdn.jsdelivr.net/gh/logspace-ai/langflow-embedded-chat@v1.0.4/dist/build/static/js/bundle.min.js';
+          /> 
         </div>
 
         {/* Situação Financeira do Cliente */}
@@ -304,7 +308,7 @@ const FormularioNegociacaoDivida = () => {
       </form>
       <div>
         <langflow-chat
-          window_title="Document QA"
+          window_title="Converse com nosso Consultor"
           flow_id="14a71524-ad4a-44ed-ae2c-7193a1487b3a"
           host_url="http://localhost:7863"
         ></langflow-chat>
